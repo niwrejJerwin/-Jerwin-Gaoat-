@@ -1,0 +1,18 @@
+// 1. Create a variable named isJsProgrammingLanguage and store true
+let isJsProgrammingLanguage = true;
+
+// 2. Create a variable named isJsHard and store false
+let isJsHard = false;
+
+// 3. Create a variable named favNumb and store your favorite number
+let favNumb = 8; // Replace 8 with your favorite number
+
+// 4. Add favNumb with the value of undefined
+let undefinedValue;
+let result = favNumb + undefinedValue;
+
+// 5. Log all variables to the console
+console.log("isJsProgrammingLanguage: " + isJsProgrammingLanguage);
+console.log("isJsHard: " + isJsHard);
+console.log("favNumb: " + favNumb);
+console.log("Adding favNumb with undefined 
