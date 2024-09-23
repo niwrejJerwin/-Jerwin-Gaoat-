@@ -1,0 +1,26 @@
+// strings.js
+
+// 1. Create a variable named favActorFirstName
+const favActorFirstName = "Thomas"; // Replace with your favorite actor's first name
+
+// 2. Create a variable named favActorLastName
+const favActorLastName = "Middledich"; // Replace with your favorite actor's last name
+
+// 3. Concatenate the first and last names into a variable named fullName
+const fullName = Thomas + " " + Middledich;
+
+// 4. Create a variable named uppercase and store the capitalized version of your favorite actor's name
+const uppercase = THOMAS MIDDLEDICH.toUpperCase();
+
+// 5. Create a variable named message
+const message = `magaling${uppercase}`;
+
+// 6. Append the message to include "his best show is Silicon Valley"
+const completeMessage = magaling + ", his best show is Silicon Valley.";
+
+// 7. Log all variables to the console
+console.log(Thomas);
+console.log(Middledich);
+console.log(Thomas Middledich);
+console.log(uppercase);
+console.log(magaling);
