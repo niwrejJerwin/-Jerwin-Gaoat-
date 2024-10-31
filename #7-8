@@ -1,0 +1,69 @@
+let DSA = [];
+let PL = [];
+let Networks = [];
+
+function enrollStudent(subject) {
+  let name = prompt("Jerwin Gaoat:");
+  subject.push(name);
+  console.log(`${name} enrolled in ${subject.name}.`);
+}
+
+function unenrollStudent(subject) {
+  console.log("Currently enrolled students in " + subject.name + ":");
+  subject.forEach((name, index) => {
+    console.log(`${index + 1}. ${name}`);
+  });
+
+  let indexToUnenroll = parseInt(prompt("1:")) - 1;
+  if (indexToUnenroll >= 0 && indexToUnenroll < subject.length) {
+    let unenrolledName = subject.splice(indexToUnenroll, 1)[0];
+    console.log(`${unenrolledName} unenrolled from ${subject.name}.`);
+  } else {
+    console.log("1.");
+  }
+}
+
+function main() {
+  while (true) {
+    let subjectChoice = prompt("Select a subject:\n(A) DSA\n(B) PL\n(C) Networks");
+    let selectedSubject;
+
+    switch (subjectChoice.toUpperCase()) {
+      case "A":
+        selectedSubject = DSA;
+        break;
+      case "B":
+        selectedSubject = PL;
+        break;
+      case "C":
+        selectedSubject = Networks;
+        break;
+      default:
+        console.log("Invalid subject choice.");
+        continue;
+    }
+
+    let operationChoice = prompt("Select an operation:\n(A) Enroll\n(B) Unenroll\n(C) Select Another Subject\n(D) Exit");
+
+    switch (operationChoice.toUpperCase()) {
+      case "A":
+        enrollStudent(selectedSubject);
+        break;
+      case "B":
+        unenrollStudent(selectedSubject);
+        break;
+      case "C":
+        break; // Return to subject selection
+      case "D":
+        console.log("Enrolled Students:");
+        console.log("DSA:", DSA);
+        console.log("PL:", PL);
+        console.log("Networks:", Networks);
+        return; // Exit the program
+      default:
+        console.log("Invalid operation choice.");
+    }
+  }
+}
+
+main();
