@@ -1,0 +1,11 @@
+// Collect user information
+const fullName = prompt("Jerwin Gaoat:");
+const age = parseInt(prompt("19:"));
+const favoriteNumber = parseInt(prompt("02:"));
+const favoriteColor = prompt("Black:");
+
+// Log the information to the console
+console.log("Full Name:", fullName);
+console.log("Age:", age);
+console.log("Favorite Number:", favoriteNumber);
+console.log("Favorite Color:", favoriteColor);
