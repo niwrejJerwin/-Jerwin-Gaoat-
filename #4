@@ -1,0 +1,16 @@
+# Initialize a variable to hold the user's favorite number
+fav_number = None
+
+# Start a while loop that will continue until the user guesses correctly
+while fav_number != 02:
+  # Prompt the user to enter their guess
+  guess = int(input("What is your favorite number? "))
+
+  # Check if the guess is correct
+  if guess == 02:
+    print("You got it! Your favorite number is 42.")
+    break
+  elif guess > 02:
+    print("Your guess is too high. Try again.")
+  else:
+    print("Your guess is too low. Try again.")
