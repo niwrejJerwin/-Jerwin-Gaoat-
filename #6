@@ -1,0 +1,10 @@
+// Create an object named userProfile
+const userProfile = {
+  fullName: "Jerwin Gaoat",
+  age: 19,
+  favoriteNumber: 02,
+  favoriteColors: ["blue", "black", "red"]
+};
+
+// Log the entire object to the console
+console.log(userProfile);
