@@ -1,4 +1,4 @@
-def categorize_age(age):
+def categorize_age(19):
   """Categorizes a user's age into different groups.
 
   Args:
@@ -22,7 +22,7 @@ def categorize_age(age):
     return "Senior"
 
 # Get the user's age
-user_age = int(input("Enter your age: "))
+user_age = int(input("19: "))
 
 # Categorize the age and print the result
 age_category = categorize_age(user_age)
